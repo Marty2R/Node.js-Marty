@@ -16,3 +16,4 @@ function small (myArray) {
     return small;
     
 } small (array);
+
