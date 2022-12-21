@@ -20,7 +20,7 @@ function read () {
 
     });
 
-}; //read();
+}; read();
 
 // Écrivez un programme Node.js qui lit un fichier, modifie son contenu et réécrit le contenu modifié dans le fichier.
 
@@ -45,7 +45,7 @@ function editeFile (params) {
     
     });
     
-} //editeFile("Nouveau contenu du fichier !");
+} editeFile("Nouveau contenu du fichier !");
 
 // Écrivez un programme Node.js qui utilise le module http pour créer un serveur simple qui sert un fichier statique.
 
@@ -97,28 +97,28 @@ function findFileIn (params) {
     
     });
 
-} //findFileIn("files");
+} findFileIn("files");
 
 // Écrivez un programme Node.js qui utilise le module fs pour créer un nouveau fichier et y écrire des données.
 
-function createAndWrite (params) {
+function createAndWrite (file, content) {
 
-    fs.writeFile("new file", params, function (err) {
+    fs.writeFile(file, content, function (err) {
 
         if (err) throw err;
         console.log('New file saved !');
 
     });
 
-} // createAndWrite("Ceci est le contenu de mon nouveau fichier texte.");
+} createAndWrite("Nouveau Fichier (1)", "Ceci est le contenu de mon nouveau fichier texte.");
 
 // Écrivez un programme Node.js qui utilise le module os pour obtenir le répertoire personnel de l'utilisateur actuel.
 
 function userInfo () {
 
-    console.log(os.homedir());
+    console.log("User info : " + os.homedir());
     
-} //userInfo();
+} userInfo();
 
 // Écrivez un programme Node.js qui utilise le module child_process pour exécuter un programme en ligne de commande.
 
