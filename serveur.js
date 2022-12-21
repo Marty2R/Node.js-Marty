@@ -20,4 +20,5 @@ const server = http.createServer(function (req, res) {
 
 server.listen(port, host, function () {
     console.log('Web server is running on port 1337');
+    console.log("control + C");
 });
